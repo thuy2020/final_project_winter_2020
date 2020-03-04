@@ -147,6 +147,7 @@ d1 %>%
   group_by(county) 
 
 # need to revisit this, how to create a new variable that's the difference between White and Hispanic by county. 
+#Thuy: I have a suggestion here: you may want to pivot_wider to get while and hispanic columns, then just subtract one from another
 
 ```
 
@@ -210,7 +211,7 @@ join2 %>%
        x = NULL,
        y = "Score (on 1-5 scale)")
 
-# 
+# Thuy: I have a suggestion here too:  you may want to consider a similar thing we did in homework 1, to create a variable to show whether it's an increase or a decrease in value. eg. mutate(some_name = ifelse(`something' > something, "x", "y")) %>% 
 
 ```
 
